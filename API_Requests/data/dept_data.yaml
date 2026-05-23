@@ -16,3 +16,6 @@ deptInfo:
     "email": "cai@gmail.com"
     "status": "0"
 
+# 删除部门
+dept_delete:
+    dept_id: 127

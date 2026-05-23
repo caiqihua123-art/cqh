@@ -1,5 +1,4 @@
 
-
 class Dept:
     """
     封装部门增删改查操作
@@ -38,3 +37,11 @@ class Dept:
         """
         path = "/system/dept"
         return self.api.put(api_path=path, json=json)
+
+
+    def delete(self, dept_id):
+        """
+        删除部门
+        """
+        path = f"/system/dept/{dept_id}"
+        return self.api.delete(api_path=path)

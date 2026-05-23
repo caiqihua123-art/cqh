@@ -1,5 +1,4 @@
 import requests
-
 from API_Requests.utils.config_utils import base_url, timeout
 
 

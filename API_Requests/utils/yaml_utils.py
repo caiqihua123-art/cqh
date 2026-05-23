@@ -67,9 +67,11 @@ deptName = dept_data['dept_search_by_name']
 deptStatus = dept_data['dept_search_by_status']
 # 新增部门数据
 deptInfo = dept_data['deptInfo']
+# 删除部门
+dept_id = dept_data['dept_delete']['dept_id']
 
 if __name__ == "__main__":
     user_data = get_yaml_data("data/dept_data.yaml")
-    print(deptInfo)
+    print(dept_id)
 
 
