@@ -1,0 +1,62 @@
+# 1.用户列表 - 按名字查询
+user_search_by_name:
+  userName : "admin"
+
+# 2.用户列表 - 按手机号查询
+user_search_by_phonenumber:
+  phonenumber : "15888888888"
+
+# 3.用户列表 - 按用户状态查询(status=0正常)
+user_search_by_status_normal:
+  status : "0"
+
+# 4.用户列表 - 按用户状态查询(status=1停用)
+user_search_by_status_disabled:
+  status : "1"
+
+# 5.用户列表 - 按创建时间查询(存在)
+user_search_by_create_time_normal:
+  "params[beginTime]" : '2026-04-01'
+  "params[endTime]" : '2026-05-01'
+
+# 6.用户列表 - 按创建时间查询(存在)
+user_search_by_create_time_disabled:
+  "params[beginTime]" : '2023-01-01'
+  "params[endTime]" : '2024-01-01'
+
+# 7.用户管理-新增-查询-修改-删除
+user_add_search_edit_delete :
+    "deptId": 103
+    "userName": "test01"
+    "nickName": "test"
+    "password": "123456"
+    "phonenumber": "13909090923"
+    "email": "test01@gmail.com"
+    "sex": "1"
+    "status": "0"
+    "remark": "测试test01"
+    "postIds": [ 2 ]
+    "roleIds": [ 2 ]
+
+# 改变用户状态  1 : 停用  0 : 正常
+user_edit_status:
+    "userId": 19
+    "status": "1"
+
+# 重置用户密码
+user_reset_password:
+    "userId" : 21
+    "password" : "234567"
+
+# 批量删除用户
+user_batch_delete:
+    batch_user_ids : 19,20
+
+# excel导入用户
+import_user_by_excel:
+    file_path : "C:/Users/Administrator/Desktop/user_template_1777178076995.xlsx"
+    update_support : True
+
+# 上传头像图片
+user_avatar_upload:
+    file_path : "D:/Snipaste_2026-05-02_21-17-21.png"
